@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background: transparent;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style:normal; 
+}
+
+
+
+/***  header2 **/
+
+.main-nav-pc{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 10%;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.6rem;
+  margin-right: auto;
+}
+
+#welcome {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#uname{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#user-img {
+  height: 100%;
+  border-radius: 10%;
+  /* box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4); */
+}
+
+
+
+
+#head-logo {
+  height: 30px;
+  margin-right: 24px;
+}
+
+
+/* .header2 {
+  position: fixed;
+  top: 4.1rem;
+  left: 5rem;
+  z-index: 1;
+  background: white;
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.header2 a i{
+  color: #000000;
+  font-size: 2.6rem;
+  position: fixed;
+  transform: translate(-3.5rem, -50%);
+
+}
+
+#b-summ {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+#spacer {
+  height: 0.1rem;
+}
+
+.day-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 3rem;
+}
+
+.day-date {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.date {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-right: 0.25rem;
+}
+
+.day {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.time-slots {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+
+.time {
+  border: none;
+  width: 100%;
+  padding: 0 1rem;
+  font-family: inherit;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #d9d9d9;
+  color: #424242;
+  line-height: 2.7rem;
+}
+
+.time:hover {
+  box-shadow: 2px 2px 10px grey;
+  cursor: pointer;
+}
+
+.time-slots .tournament {
+  background-color: aqua;
+}
+
+
+#last_day{
+  margin-bottom: 7rem;
+}
+
+
+
+/** BID CONFRIMATION **/
+
+.bid-container {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  align-items: center;
+  padding: 1rem;
+  margin: 4rem 0 5rem 0rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bid-input {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.bid-container h1 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.bid-input input {
+  background-color: #eeeeee;
+  border: none;
+  width: 70%;
+  padding: 0 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: inherit;
+  color: #8a8a8a;
+  border-radius: 0.5rem;
+}
+
+.bid-input button {
+  border: none;
+  background-color: #85e0ab;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  width: 30%;
+}
+
+.bid-input button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 6px grey;
+}
+
+.bid-input button i {
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #00401a;
+  text-align: center;
+}
+
+
+
+
+
+/** BOTTOM NAV-BAR READY ***/
+
+.bottom-nav {
+  width: 100vw;
+  padding: 0.5rem 0 0.5rem 0;
+  border-radius: 1.3rem 1.3rem 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-nav i {
+  color: #424242;
+  font-size: 2.3rem;;
+}
+
+
+.bx {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-item .active {
+  color: #6A00FF;
+  text-shadow: 0px 0px 10px #2f74ff7a;
+}
+
+.nav-label {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+@media screen and (orientation:portrait) {
+  .header{
+      display: none;
+  }
+  
+}
+
+
+@media screen and (orientation:landscape) {
+  .bottom-nav{
+      display: none;
+  }
+
+  .header2 {
+    display:none ;
+  }
+
+  .continers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+.day-container {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 3rem;
+}
+
+.day-date {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.date {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-right: 0.25rem;
+}
+
+.day {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.time-slots {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+#neg-space{
+  margin-top: -7.5rem;
+}
+
+.time {
+  border: none;
+  width: 100%;
+  padding: 0 1rem;
+  font-family: inherit;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #d9d9d9;
+  color: #424242;
+  line-height: 2.7rem;
+}
+
+.time:hover {
+  box-shadow: 2px 2px 10px grey;
+  cursor: pointer;
+}
+
+.time-slots .tournament {
+  background-color: aqua;
+}
+
+
+#last_day{
+  margin-bottom: 7rem;
+}
+
+}
