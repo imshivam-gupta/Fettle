@@ -10,9 +10,9 @@ Fettle is an innovative solution designed to ensure fair resource management amo
 
 ## Technologies Used
 
-- **Frontend: **The frontend of Fettle is developed using pure HTML CSS and Javascript.
+- **Frontend:** The frontend of Fettle is developed using pure HTML CSS and Javascript.
 - **Backend:** For the backend, Fettle utilizes Node.js and Express.js to handle requests, manage user data, and facilitate communication with the database.
-- **Database: **MongoDB is used as the primary database to store user information, court availability, ratings, and other essential data.
+- **Database:** MongoDB is used as the primary database to store user information, court availability, ratings, and other essential data.
 
 ## Acknowledgments
 I would like to express our gratitude to the organizers of the Erudite Ideathon and BVMI Hackathon for recognizing the potential and impact of Fettle in promoting fair resource management in college sports.
